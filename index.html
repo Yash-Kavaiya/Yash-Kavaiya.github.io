@@ -1,36 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yash Kavaiya </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Kavaiya - AI Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <style>
+        :root {
+            --google-blue: #4285F4;
+            --google-red: #DB4437;
+            --google-yellow: #F4B400;
+            --google-green: #0F9D58;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--google-blue), var(--google-red));
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 30%;
+            background: linear-gradient(to top, rgba(255,255,255,0.1), transparent);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 4rem 0;
+        }
+
+        section {
+            margin-bottom: 4rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: var(--google-blue);
+            border-bottom: 2px solid var(--google-yellow);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--google-green);
+        }
+
+        .project {
+            background: linear-gradient(135deg, #f6f6f6, #ffffff);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--google-blue);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .skill {
+            background: linear-gradient(135deg, var(--google-blue), var(--google-red));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: transform 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: scale(1.05);
+        }
+
+        #contact {
+            text-align: center;
+            background: linear-gradient(135deg, var(--google-green), var(--google-yellow));
+            color: white;
+            padding: 3rem 0;
+            border-radius: 8px;
+        }
+
+        #contact a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+            transition: opacity 0.3s ease;
+        }
+
+        #contact a:hover {
+            opacity: 0.8;
+        }
+
+        .social-icons {
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <header class="text-gray-600 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        <span class="ml-3 text-xl">Yash Kavaiya</span>
-      </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a class="mr-5 hover:text-gray-900">Home</a>
-        <a class="mr-5 hover:text-gray-900">Resume PDF</a>
-        <a class="mr-5 hover:text-gray-900">Projects</a>
-        <a class="mr-5 hover:text-gray-900">Contact me</a>
-      </nav>
-      <button
-        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Download
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </button>
+    <header>
+        <h1>Yash Kavaiya</h1>
+        <p>AI Engineer | Cloud Specialist | Data Scientist</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Innovative AI Engineer with expertise in Google Cloud Platform technologies, specializing in developing cutting-edge chatbot solutions and custom analytics dashboards for various industries. Passionate about leveraging AI to solve complex business challenges and drive digital transformation.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <h3>AI Engineer at Tata Consultancy Services</h3>
+            <p>Bangalore | October 2021 - Present</p>
+            <ul>
+                <li>Leveraged GCP technologies to deliver comprehensive chatbot solutions and custom analytics dashboards for fintech, telecom, and F&B clients.</li>
+                <li>Achieved a 30% reduction in data retrieval time for a prominent client, streamlining operations and enhancing decision-making processes.</li>
+                <li>Developed and deployed a voicebot solution for a major telecom client, resulting in a 25% increase in customer engagement and 20% reduction in call handling time.</li>
+                <li>Implemented advanced analytics dashboards, providing actionable insights to improve business operations across various client engagements.</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Online Diploma in Data Science</strong><br>
+                    IIT Madras | 2021 - Ongoing<br>
+                    GPA: 3.25 / 4.00
+                </li>
+                <li>
+                    <strong>Master of Science in Physics</strong><br>
+                    NIT Surat | 2017 - 2021<br>
+                    CGPA: 9.15 / 10.00
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Key Projects</h2>
+            <div class="project">
+                <h3>Sentiment Analysis in Contact Center Reviews</h3>
+                <p>Developed an AI-powered tool to automatically screen and analyze large volumes of customer reviews, extracting sentiment and identifying key themes. This solution significantly reduced manual effort and provided richer insights into customer experiences.</p>
+            </div>
+            <div class="project">
+                <h3>Customer Service Automation</h3>
+                <p>Created AI-powered chatbots and virtual assistants capable of handling routine inquiries, scheduling appointments, and escalating complex issues. This system improved efficiency and accessibility while providing contextual understanding for personalized recommendations.</p>
+            </div>
+            <div class="project">
+                <h3>Conversation AI Using RAG Method</h3>
+                <p>Implemented a conversational AI system leveraging the Retrieval-Augmented Generation (RAG) method with the LLAMA-2 language model, facilitated by the LangChain library. This project showcased advanced natural language processing capabilities.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Expertise</h2>
+            <div class="skills">
+                <span class="skill">Python</span>
+                <span class="skill">SQL</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Machine Learning</span>
+                <span class="skill">Dialogflow CX</span>
+                <span class="skill">Cloud Run</span>
+                <span class="skill">Docker</span>
+                <span class="skill">TensorFlow</span>
+                <span class="skill">PyTorch</span>
+                <span class="skill">Vertex AI</span>
+                <span class="skill">Generative AI</span>
+                <span class="skill">Langchain</span>
+                <span class="skill">Big Query</span>
+                <span class="skill">Firestore</span>
+            </div>
+        </section>
     </div>
-  </header>
 
+    <section id="contact">
+        <h2>Let's Connect</h2>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+        <p>Email: yash.kavaiya3@gmail.com | Phone: +919265745362</p>
+        <p>Bangalore, India</p>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/yashkavaiya" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/in/Yash-Kavaiya" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add a subtle parallax effect to the header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            let scroll = window.pageYOffset;
+            header.style.backgroundPositionY = scroll * 0.5 + 'px';
+        });
+
+        // Animate skill tags
+        const skills = document.querySelectorAll('.skill');
+        skills.forEach(skill => {
+            skill.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.1) rotate(5deg)';
+            });
+            skill.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1) rotate(0deg)';
+            });
+        });
+    </script>
 </body>
-
 </html>
