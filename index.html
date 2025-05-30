@@ -4,13 +4,13 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Yash Kavaiya - Conversational AI Engineer specializing in Dialogflow CX, Google Cloud Platform, and enterprise virtual agent solutions">
-      <meta name="theme-color" content="#ffffff">
+      <meta name="theme-color" content="#4285F4">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="robots" content="index, follow">
       
       <!-- Performance optimization: Preload critical resources -->
       <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
-      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" as="style">
       
       <!-- Core CSS -->
       <script src="https://cdn.tailwindcss.com"></script>
@@ -19,49 +19,67 @@
           theme: {
             extend: {
              colors: {
-                primary: {
-                  50: '#f8f8f8',
-                  100: '#e8e8e8',
-                  200: '#d3d3d3',
-                  300: '#a3a3a3',
-                  400: '#737373',
-                  500: '#525252',
-                  600: '#404040',
-                  700: '#262626',
-                  800: '#171717',
-                  900: '#0a0a0a',
-                  950: '#030303',
-                },
-                secondary: {
-                  50: '#f8f8f8',
-                  100: '#e8e8e8',
-                  200: '#d3d3d3',
-                  300: '#a3a3a3',
-                  400: '#737373',
-                  500: '#525252',
-                  600: '#404040',
-                  700: '#262626',
-                  800: '#171717',
-                  900: '#0a0a0a',
-                  950: '#030303',
-                },
-                accent: {
-                  50: '#f8f8f8',
-                  100: '#e8e8e8',
-                  200: '#d3d3d3',
-                  300: '#a3a3a3',
-                  400: '#737373',
-                  500: '#525252',
-                  600: '#404040',
-                  700: '#262626',
-                  800: '#171717',
-                  900: '#0a0a0a',
-                  950: '#030303',
+                google: {
+                  blue: '#4285F4',
+                  red: '#EA4335',
+                  yellow: '#FBBC04',
+                  green: '#34A853',
+                  'blue-50': '#E8F0FE',
+                  'blue-100': '#D2E3FC',
+                  'blue-200': '#AECBFA',
+                  'blue-300': '#8AB4F8',
+                  'blue-400': '#669DF6',
+                  'blue-500': '#4285F4',
+                  'blue-600': '#1A73E8',
+                  'blue-700': '#1967D2',
+                  'blue-800': '#185ABC',
+                  'blue-900': '#174EA6',
+                  'red-50': '#FCE8E6',
+                  'red-100': '#FAD2CF',
+                  'red-200': '#F6AEA9',
+                  'red-300': '#F28B82',
+                  'red-400': '#EE675C',
+                  'red-500': '#EA4335',
+                  'red-600': '#D33B2C',
+                  'red-700': '#C5221F',
+                  'red-800': '#B31412',
+                  'red-900': '#A50E0E',
+                  'yellow-50': '#FEF7E0',
+                  'yellow-100': '#FEEFC3',
+                  'yellow-200': '#FDE68A',
+                  'yellow-300': '#FCD34D',
+                  'yellow-400': '#FBBF24',
+                  'yellow-500': '#FBBC04',
+                  'yellow-600': '#F59E0B',
+                  'yellow-700': '#D97706',
+                  'yellow-800': '#B45309',
+                  'yellow-900': '#92400E',
+                  'green-50': '#E6F4EA',
+                  'green-100': '#CEEAD6',
+                  'green-200': '#A8DAB5',
+                  'green-300': '#81C995',
+                  'green-400': '#5BB974',
+                  'green-500': '#34A853',
+                  'green-600': '#137333',
+                  'green-700': '#0F9D58',
+                  'green-800': '#0D652D',
+                  'green-900': '#0B5345',
+                  'gray-50': '#F8F9FA',
+                  'gray-100': '#F1F3F4',
+                  'gray-200': '#E8EAED',
+                  'gray-300': '#DADCE0',
+                  'gray-400': '#BDC1C6',
+                  'gray-500': '#9AA0A6',
+                  'gray-600': '#80868B',
+                  'gray-700': '#5F6368',
+                  'gray-800': '#3C4043',
+                  'gray-900': '#202124',
                 },
               },
               fontFamily: {
-                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+                sans: ['Google Sans', 'Roboto', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Google Sans', 'Roboto', 'system-ui', 'sans-serif'],
+                body: ['Roboto', 'Google Sans', 'system-ui', 'sans-serif'],
               },
               spacing: {
                 '18': '4.5rem',
@@ -148,7 +166,7 @@
       <!-- Optimized Font Loading -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
       
       <!-- Icons -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
@@ -204,28 +222,31 @@
       </a>
 
       <!-- Navigation -->
-      <nav class="fixed w-full z-50 bg-neutral-900 text-white shadow-lg">
+      <nav class="fixed w-full z-50 bg-white text-google-gray-800 shadow-lg border-b border-google-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between items-center h-16">
-            <div class="flex-shrink-0">
-              <span class="text-2xl font-bold">Yash Kavaiya</span>
+            <div class="flex-shrink-0 flex items-center">
+              <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-gradient-to-r from-google-blue via-google-red to-google-yellow rounded-full"></div>
+                <span class="text-2xl font-bold font-heading text-google-gray-900">Yash Kavaiya</span>
+              </div>
             </div>
             
             <!-- Desktop Menu -->
             <div class="hidden md:block">
-              <div class="ml-10 flex items-baseline space-x-4">
-                <a href="#about" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
-                <a href="#experience" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">Experience</a>
-                <a href="#expertise" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">Expertise</a>
-                <a href="#projects" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
-                <a href="#education" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">Education</a>
-                <a href="#contact" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+              <div class="ml-10 flex items-baseline space-x-1">
+                <a href="#about" class="hover:bg-google-blue-50 text-google-gray-700 hover:text-google-blue px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200">About</a>
+                <a href="#experience" class="hover:bg-google-blue-50 text-google-gray-700 hover:text-google-blue px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200">Experience</a>
+                <a href="#expertise" class="hover:bg-google-blue-50 text-google-gray-700 hover:text-google-blue px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200">Expertise</a>
+                <a href="#projects" class="hover:bg-google-blue-50 text-google-gray-700 hover:text-google-blue px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200">Projects</a>
+                <a href="#education" class="hover:bg-google-blue-50 text-google-gray-700 hover:text-google-blue px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200">Education</a>
+                <a href="#contact" class="bg-google-blue hover:bg-google-blue-600 text-white px-6 py-2 rounded-lg text-sm font-medium transition-all duration-200 shadow-md hover:shadow-lg">Contact</a>
               </div>
             </div>
 
             <!-- Mobile menu button -->
             <div class="md:hidden">
-              <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md hover:bg-neutral-700 focus:outline-none">
+              <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-lg text-google-gray-700 hover:bg-google-gray-100 focus:outline-none focus:ring-2 focus:ring-google-blue">
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -235,14 +256,14 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-neutral-900">
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-google-gray-200">
           <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#about" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">About</a>
-            <a href="#experience" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Experience</a>
-            <a href="#expertise" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Expertise</a>
-            <a href="#projects" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Projects</a>
-            <a href="#education" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Education</a>
-            <a href="#contact" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            <a href="#about" class="block hover:bg-google-blue-50 text-google-gray-700 hover:text-google-blue px-3 py-2 rounded-lg text-base font-medium">About</a>
+            <a href="#experience" class="block hover:bg-google-blue-50 text-google-gray-700 hover:text-google-blue px-3 py-2 rounded-lg text-base font-medium">Experience</a>
+            <a href="#expertise" class="block hover:bg-google-blue-50 text-google-gray-700 hover:text-google-blue px-3 py-2 rounded-lg text-base font-medium">Expertise</a>
+            <a href="#projects" class="block hover:bg-google-blue-50 text-google-gray-700 hover:text-google-blue px-3 py-2 rounded-lg text-base font-medium">Projects</a>
+            <a href="#education" class="block hover:bg-google-blue-50 text-google-gray-700 hover:text-google-blue px-3 py-2 rounded-lg text-base font-medium">Education</a>
+            <a href="#contact" class="block bg-google-blue hover:bg-google-blue-600 text-white px-3 py-2 rounded-lg text-base font-medium">Contact</a>
           </div>
         </div>
       </nav>
@@ -251,66 +272,81 @@
       <main id="main-content" class="flex-1 relative">
         
         <!-- Hero Section -->
-        <section id="hero" class="bg-gradient-to-br from-neutral-900 via-neutral-800 to-blue-900 text-white min-h-screen flex items-center pt-16">
+        <section id="hero" class="bg-gradient-to-br from-google-blue-50 via-white to-google-green-50 text-google-gray-900 min-h-screen flex items-center pt-16">
           <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-12 items-center">
               <div class="animate-slide-up">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-                  Hi, I'm <span class="text-blue-400">Yash Kavaiya</span>
+                <div class="mb-6">
+                  <div class="inline-flex items-center px-4 py-2 bg-google-blue-50 text-google-blue rounded-full text-sm font-medium mb-6">
+                    <span class="w-2 h-2 bg-google-green rounded-full mr-2"></span>
+                    Available for new opportunities
+                  </div>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight font-heading">
+                  Hi, I'm <span class="bg-gradient-to-r from-google-blue via-google-red to-google-green bg-clip-text text-transparent">Yash Kavaiya</span>
                 </h1>
-                <h2 class="text-2xl md:text-3xl mb-6 text-gray-300">Conversational AI Engineer</h2>
-                <p class="text-lg mb-8 text-gray-300 leading-relaxed">
+                <h2 class="text-2xl md:text-3xl mb-6 text-google-gray-700 font-medium">Conversational AI Engineer</h2>
+                <p class="text-lg mb-8 text-google-gray-600 leading-relaxed font-body">
                   Experienced engineer with 3+ years of expertise in designing and implementing virtual agent solutions on Google's platforms, particularly Dialogflow CX. Specialized in delivering end-to-end chatbot implementations for enterprise clients.
                 </p>
                 <div class="flex flex-wrap gap-4 mb-8">
-                  <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105">
-                    Contact Me
+                  <a href="#contact" class="bg-google-blue hover:bg-google-blue-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    <i class="fas fa-envelope mr-2"></i>
+                    Get In Touch
                   </a>
-                  <a href="#projects" class="border border-blue-400 hover:bg-blue-600 px-6 py-3 rounded-lg font-semibold transition duration-300">
+                  <a href="#projects" class="border-2 border-google-blue text-google-blue hover:bg-google-blue hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300">
+                    <i class="fas fa-code mr-2"></i>
                     View Projects
                   </a>
                 </div>
-                <div class="flex space-x-6">
-                  <a href="mailto:yash.kavaiya3@gmail.com" class="text-gray-400 hover:text-white transition duration-300" title="Email">
-                    <i class="fas fa-envelope text-2xl"></i>
+                <div class="flex space-x-4">
+                  <a href="mailto:yash.kavaiya3@gmail.com" class="p-3 bg-google-red text-white rounded-full hover:bg-google-red-600 transition-all duration-300 transform hover:scale-110" title="Email">
+                    <i class="fas fa-envelope text-lg"></i>
                   </a>
-                  <a href="https://linkedin.com/in/yashkavaiya" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300" title="LinkedIn">
-                    <i class="fab fa-linkedin text-2xl"></i>
+                  <a href="https://linkedin.com/in/yashkavaiya" target="_blank" class="p-3 bg-google-blue text-white rounded-full hover:bg-google-blue-600 transition-all duration-300 transform hover:scale-110" title="LinkedIn">
+                    <i class="fab fa-linkedin text-lg"></i>
                   </a>
-                  <a href="https://github.com/Yash-Kavaiya" target="_blank" class="text-gray-400 hover:text-white transition duration-300" title="GitHub">
-                    <i class="fab fa-github text-2xl"></i>
+                  <a href="https://github.com/Yash-Kavaiya" target="_blank" class="p-3 bg-google-gray-800 text-white rounded-full hover:bg-google-gray-900 transition-all duration-300 transform hover:scale-110" title="GitHub">
+                    <i class="fab fa-github text-lg"></i>
                   </a>
-                  <a href="tel:+919265745362" class="text-gray-400 hover:text-green-400 transition duration-300" title="Phone">
-                    <i class="fas fa-phone text-2xl"></i>
+                  <a href="tel:+919265745362" class="p-3 bg-google-green text-white rounded-full hover:bg-google-green-600 transition-all duration-300 transform hover:scale-110" title="Phone">
+                    <i class="fas fa-phone text-lg"></i>
                   </a>
                 </div>
               </div>
               <div class="animate-slide-right">
-                <div class="bg-neutral-800/50 backdrop-blur-sm p-8 rounded-xl shadow-2xl border border-neutral-700">
-                  <div class="text-sm text-blue-400 mb-4 font-semibold">Currently working as</div>
+                <div class="bg-white p-8 rounded-2xl shadow-2xl border border-google-gray-200 relative overflow-hidden">
+                  <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-google-blue via-google-red via-google-yellow to-google-green"></div>
+                  <div class="text-sm text-google-blue mb-4 font-semibold">Currently working as</div>
                   <div class="mb-6">
-                    <h3 class="text-2xl font-bold text-white">Senior Analyst</h3>
-                    <p class="text-blue-400 text-lg">Accenture, Pune</p>
-                    <p class="text-gray-400 text-sm">Oct 2024 - Present</p>
+                    <h3 class="text-2xl font-bold text-google-gray-900 font-heading">Senior Analyst</h3>
+                    <p class="text-google-blue text-lg font-semibold">Accenture, Pune</p>
+                    <p class="text-google-gray-600 text-sm">Oct 2024 - Present</p>
                   </div>
-                  <div class="space-y-3 mb-6">
-                    <div class="flex items-center">
-                      <i class="fas fa-robot text-blue-400 mr-3"></i>
-                      <span class="text-gray-300">Dialogflow CX Expert</span>
+                  <div class="space-y-4 mb-6">
+                    <div class="flex items-center p-3 bg-google-blue-50 rounded-lg">
+                      <div class="w-10 h-10 bg-google-blue rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-robot text-white"></i>
+                      </div>
+                      <span class="text-google-gray-800 font-medium">Dialogflow CX Expert</span>
                     </div>
-                    <div class="flex items-center">
-                      <i class="fas fa-cloud text-blue-400 mr-3"></i>
-                      <span class="text-gray-300">Google Cloud Platform</span>
+                    <div class="flex items-center p-3 bg-google-green-50 rounded-lg">
+                      <div class="w-10 h-10 bg-google-green rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-cloud text-white"></i>
+                      </div>
+                      <span class="text-google-gray-800 font-medium">Google Cloud Platform</span>
                     </div>
-                    <div class="flex items-center">
-                      <i class="fas fa-comments text-blue-400 mr-3"></i>
-                      <span class="text-gray-300">Contact Center AI</span>
+                    <div class="flex items-center p-3 bg-google-yellow-50 rounded-lg">
+                      <div class="w-10 h-10 bg-google-yellow rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-comments text-white"></i>
+                      </div>
+                      <span class="text-google-gray-800 font-medium">Contact Center AI</span>
                     </div>
                   </div>
                   <div class="flex flex-wrap gap-2">
-                    <span class="bg-neutral-700 px-3 py-1 rounded-full text-sm text-white">Conversational AI</span>
-                    <span class="bg-neutral-700 px-3 py-1 rounded-full text-sm text-white">Virtual Agents</span>
-                    <span class="bg-neutral-700 px-3 py-1 rounded-full text-sm text-white">Enterprise Solutions</span>
+                    <span class="bg-google-blue-100 text-google-blue px-3 py-1 rounded-full text-sm font-medium">Conversational AI</span>
+                    <span class="bg-google-green-100 text-google-green px-3 py-1 rounded-full text-sm font-medium">Virtual Agents</span>
+                    <span class="bg-google-red-100 text-google-red px-3 py-1 rounded-full text-sm font-medium">Enterprise Solutions</span>
                   </div>
                 </div>
               </div>
@@ -319,37 +355,45 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="py-20 bg-white">
+        <section id="about" class="py-20 bg-google-gray-50">
           <div class="container mx-auto px-4">
             <div class="max-w-6xl mx-auto">
-              <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 animate-fade-in">
-                Professional Summary
-              </h2>
+              <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 font-heading text-google-gray-900 animate-fade-in">
+                  Professional Summary
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-google-blue to-google-green mx-auto rounded-full"></div>
+              </div>
               
               <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6 animate-slide-left">
-                  <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Experience Highlights</h3>
+                  <div class="bg-white p-8 rounded-2xl shadow-lg border border-google-gray-200 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                      <div class="w-12 h-12 bg-google-blue rounded-lg flex items-center justify-center mr-4">
+                        <i class="fas fa-chart-line text-white text-xl"></i>
+                      </div>
+                      <h3 class="text-2xl font-semibold text-google-gray-900 font-heading">Experience Highlights</h3>
+                    </div>
                     <div class="space-y-4">
                       <div class="flex items-start">
-                        <div class="w-3 h-3 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                        <div class="w-3 h-3 bg-google-blue rounded-full mt-2 mr-4 flex-shrink-0"></div>
                         <div>
-                          <p class="font-semibold text-gray-800">3+ Years of Conversational AI Expertise</p>
-                          <p class="text-gray-600">Specialized in Dialogflow CX and Google's Contact Center AI platform</p>
+                          <p class="font-semibold text-google-gray-800">3+ Years of Conversational AI Expertise</p>
+                          <p class="text-google-gray-600">Specialized in Dialogflow CX and Google's Contact Center AI platform</p>
                         </div>
                       </div>
                       <div class="flex items-start">
-                        <div class="w-3 h-3 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                        <div class="w-3 h-3 bg-google-green rounded-full mt-2 mr-4 flex-shrink-0"></div>
                         <div>
-                          <p class="font-semibold text-gray-800">Enterprise Client Focus</p>
-                          <p class="text-gray-600">Successfully delivered solutions across fintech, telecom, and F&B sectors</p>
+                          <p class="font-semibold text-google-gray-800">Enterprise Client Focus</p>
+                          <p class="text-google-gray-600">Successfully delivered solutions across fintech, telecom, and F&B sectors</p>
                         </div>
                       </div>
                       <div class="flex items-start">
-                        <div class="w-3 h-3 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                        <div class="w-3 h-3 bg-google-red rounded-full mt-2 mr-4 flex-shrink-0"></div>
                         <div>
-                          <p class="font-semibold text-gray-800">Proven Results</p>
-                          <p class="text-gray-600">Delivered measurable improvements in customer experience and operational efficiency</p>
+                          <p class="font-semibold text-google-gray-800">Proven Results</p>
+                          <p class="text-google-gray-600">Delivered measurable improvements in customer experience and operational efficiency</p>
                         </div>
                       </div>
                     </div>
@@ -357,35 +401,48 @@
                 </div>
 
                 <div class="space-y-6 animate-slide-right">
-                  <div class="bg-blue-50 p-8 rounded-xl shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4 text-blue-800">Key Achievements</h3>
+                  <div class="bg-white p-8 rounded-2xl shadow-lg border border-google-gray-200 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                      <div class="w-12 h-12 bg-google-green rounded-lg flex items-center justify-center mr-4">
+                        <i class="fas fa-trophy text-white text-xl"></i>
+                      </div>
+                      <h3 class="text-2xl font-semibold text-google-green-700 font-heading">Key Achievements</h3>
+                    </div>
                     <div class="space-y-4">
-                      <div class="flex items-center">
-                        <i class="fas fa-chart-line text-blue-600 text-xl mr-4"></i>
+                      <div class="flex items-center p-4 bg-google-blue-50 rounded-xl">
+                        <div class="w-10 h-10 bg-google-blue rounded-lg flex items-center justify-center mr-4">
+                          <span class="text-white font-bold text-sm">40%</span>
+                        </div>
                         <div>
-                          <p class="font-semibold text-gray-800">40% reduction in average resolution time</p>
-                          <p class="text-gray-600 text-sm">Enterprise virtual agent implementation</p>
+                          <p class="font-semibold text-google-gray-800">Reduction in average resolution time</p>
+                          <p class="text-google-gray-600 text-sm">Enterprise virtual agent implementation</p>
                         </div>
                       </div>
-                      <div class="flex items-center">
-                        <i class="fas fa-tachometer-alt text-blue-600 text-xl mr-4"></i>
+                      <div class="flex items-center p-4 bg-google-green-50 rounded-xl">
+                        <div class="w-10 h-10 bg-google-green rounded-lg flex items-center justify-center mr-4">
+                          <span class="text-white font-bold text-sm">30%</span>
+                        </div>
                         <div>
-                          <p class="font-semibold text-gray-800">30% reduction in data retrieval time</p>
-                          <p class="text-gray-600 text-sm">Cloud-based AI solutions architecture</p>
+                          <p class="font-semibold text-google-gray-800">Reduction in data retrieval time</p>
+                          <p class="text-google-gray-600 text-sm">Cloud-based AI solutions architecture</p>
                         </div>
                       </div>
-                      <div class="flex items-center">
-                        <i class="fas fa-users text-blue-600 text-xl mr-4"></i>
+                      <div class="flex items-center p-4 bg-google-red-50 rounded-xl">
+                        <div class="w-10 h-10 bg-google-red rounded-lg flex items-center justify-center mr-4">
+                          <span class="text-white font-bold text-sm">25%</span>
+                        </div>
                         <div>
-                          <p class="font-semibold text-gray-800">25% increase in customer engagement</p>
-                          <p class="text-gray-600 text-sm">Voice-enabled virtual agent for telecom</p>
+                          <p class="font-semibold text-google-gray-800">Increase in customer engagement</p>
+                          <p class="text-google-gray-600 text-sm">Voice-enabled virtual agent for telecom</p>
                         </div>
                       </div>
-                      <div class="flex items-center">
-                        <i class="fas fa-clock text-blue-600 text-xl mr-4"></i>
+                      <div class="flex items-center p-4 bg-google-yellow-50 rounded-xl">
+                        <div class="w-10 h-10 bg-google-yellow rounded-lg flex items-center justify-center mr-4">
+                          <span class="text-white font-bold text-sm">20%</span>
+                        </div>
                         <div>
-                          <p class="font-semibold text-gray-800">20% reduction in call handling time</p>
-                          <p class="text-gray-600 text-sm">Comprehensive CCAI implementation</p>
+                          <p class="font-semibold text-google-gray-800">Reduction in call handling time</p>
+                          <p class="text-google-gray-600 text-sm">Comprehensive CCAI implementation</p>
                         </div>
                       </div>
                     </div>
