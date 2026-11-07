@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSE Analyzer Privacy Policy</title>
+  <link rel="icon" href="icon-128.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <img src="icon-128.png" alt="">
+  <a class="name" href="./">NSE Analyzer</a>
+  <nav><a href="./">Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+</header>
+<main>
+  <h1>Privacy policy</h1>
+  <p>Effective 7 November 2026.</p>
+  <p>NSE Analyzer ("the add-on") is a Google Sheets add-on published by Yash Kavaiya. The add-on runs entirely in your Google account, on Google Apps Script. The developer operates no servers and receives none of your data.</p>
+
+  <h2>Google user data the add-on accesses</h2>
+  <table>
+    <tr><th>Permission</th><th>What it is used for</th></tr>
+    <tr><td>See, edit, create and delete your spreadsheets (<code>spreadsheets</code>)</td><td>Reads the Settings, Watchlist and Strategies sheets and writes the Signals, Market, Backtest, AI and Log sheets in the spreadsheet where you use the add-on. The hourly auto-refresh opens that same spreadsheet by its id. The add-on does not open, read or change any other spreadsheet.</td></tr>
+    <tr><td>Connect to an external service (<code>script.external_request</code>)</td><td>Requests market data from the NSE MCP servers and, if you set a Gemini API key, sends requests to the Google Gemini API.</td></tr>
+    <tr><td>Allow this application to run when you are not present (<code>script.scriptapp</code>)</td><td>Creates the optional hourly auto-refresh trigger for the spreadsheet, and removes it when you stop auto-refresh.</td></tr>
+    <tr><td>Display and run third-party web content in prompts and sidebars (<code>script.container.ui</code>)</td><td>Shows the menu, dialogs and the dashboard inside Google Sheets.</td></tr>
+    <tr><td>Send email as you (<code>script.send_mail</code>)</td><td>Sends an alert email when a symbol turns BUY or SELL, only if you enter an address in the Settings sheet's AlertEmail row. Nothing is sent otherwise.</td></tr>
+  </table>
+
+  <h2>Where your data goes</h2>
+  <ul>
+    <li><strong>Your spreadsheet.</strong> Your watchlist, settings, strategies, signals, backtests and AI output are stored in your own spreadsheet in Google Drive.</li>
+    <li><strong>Apps Script storage in your account.</strong> Your Gemini API key is stored in your Apps Script user properties, visible only to you, not to people you share the spreadsheet with. The spreadsheet id, last signals and the refresh trigger id are stored in the spreadsheet's document properties. Short-lived caches hold market data for up to six hours.</li>
+    <li><strong>NSE MCP servers</strong> (<code>mcp.nseindia.in</code>). The add-on sends stock and index symbols to fetch quotes and history. No personal data is sent. NSE's own terms and privacy policy apply to these servers.</li>
+    <li><strong>Google Gemini API</strong>, only if you set your own API key. When you ask for an analysis, a market brief, help writing a strategy, or use the chat, the add-on sends your request text, the relevant market data, your watchlist symbols and their signals to the Gemini API under your key. <a href="https://ai.google.dev/gemini-api/terms">Google's Gemini API terms</a> apply to that data.</li>
+    <li><strong>Email</strong>, only if you set an alert address. Alerts are sent from your Google account to the address you entered.</li>
+  </ul>
+  <p>The developer does not collect, store, sell or share your data, uses no analytics or advertising, and has no access to your spreadsheet or your API key.</p>
+
+  <h2>Limited Use</h2>
+  <p>NSE Analyzer's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to provide the features described above, is not transferred to anyone except as described above, is not used for advertising, and is not read by any person.</p>
+
+  <h2 id="retention-and-deletion">Retention and deletion</h2>
+  <p>Your data stays in your Google account until you delete it. To remove everything: stop auto-refresh, uninstall the add-on from <em>Extensions &gt; Add-ons &gt; Manage add-ons</em>, delete the add-on's sheets or the spreadsheet, and revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Revoking access also removes the stored API key from use. Cached market data expires within six hours.</p>
+
+  <h2>Children</h2>
+  <p>The add-on is not directed at children under 18.</p>
+
+  <h2>Changes</h2>
+  <p>Changes to this policy will be posted on this page with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy: <a href="mailto:yash.kavaiya3@gmail.com">yash.kavaiya3@gmail.com</a>.</p>
+</main>
+<footer>NSE Analyzer · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a> · <a href="support.html">Support</a></footer>
+</body>
+</html>

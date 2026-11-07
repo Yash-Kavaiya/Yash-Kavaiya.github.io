@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSE Analyzer for Google Sheets</title>
+  <meta name="description" content="A Google Sheets add-on that scores an NSE watchlist against strategies you write, sizes a trade plan, and adds AI commentary using your own Gemini API key. For research and education only.">
+  <link rel="icon" href="icon-128.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <img src="icon-128.png" alt="">
+  <a class="name" href="./">NSE Analyzer</a>
+  <nav><a href="./" aria-current="page">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+</header>
+<main>
+  <h1>Market research for Indian equities, inside Google Sheets</h1>
+  <p class="lead">NSE Analyzer is a free Google Sheets add-on. It pulls quotes and daily history from the NSE MCP servers, scores your watchlist against strategy rules you write, sizes a trade plan, and can add commentary from Google's Gemini models using your own API key.</p>
+
+  <p class="note"><strong>Educational and research use only.</strong> Signals, backtests and AI output are not investment advice. Market data comes from the National Stock Exchange of India's MCP servers and is subject to NSE's terms. NSE Analyzer is an independent project and is not affiliated with or endorsed by NSE or Google.</p>
+
+  <h2>What it does</h2>
+  <table>
+    <tr><th>Feature</th><th>Details</th></tr>
+    <tr><td>Live data</td><td>Quotes, indices, top movers, market mood (VIX, breadth) and sector rotation, refreshed hourly in the sheet and every minute in the open dashboard.</td></tr>
+    <tr><td>Strategies</td><td>Write rules such as <code>CLOSE &gt; SMA(200) AND CROSSOVER(EMA(9), EMA(21))</code>. Each true rule adds to or subtracts from a symbol's score.</td></tr>
+    <tr><td>Trade plan</td><td>Entry, ATR stop, target and position size from your capital and risk per trade.</td></tr>
+    <tr><td>Backtests</td><td>Test each rule on your watchlist's daily history, with costs deducted.</td></tr>
+    <tr><td>Dashboard</td><td>Candlestick chart with indicators, signal table and a strategy lab, in a dialog over your sheet.</td></tr>
+    <tr><td>AI (optional)</td><td>Per-stock analysis, a market brief and a chat assistant, using a Gemini API key you supply.</td></tr>
+  </table>
+
+  <h2>Screenshots</h2>
+  <img class="shot" src="screenshot-1.png" alt="Dashboard overview with index tiles, market mood and the signal table">
+  <img class="shot" src="screenshot-2.png" alt="Candlestick chart with moving averages, volume, RSI and MACD">
+  <img class="shot" src="screenshot-3.png" alt="Strategy lab for writing and testing strategy rules">
+
+  <h2>Getting started</h2>
+  <ol>
+    <li>Install NSE Analyzer from the Google Workspace Marketplace and open any Google Sheet.</li>
+    <li>Choose <em>Extensions &gt; NSE Analyzer &gt; Setup / repair sheets</em>. This creates the Settings, Watchlist and Strategies sheets.</li>
+    <li>Optional: <em>AI (Gemini) &gt; Set Gemini API key</em>, with a key from <a href="https://aistudio.google.com/apikey">Google AI Studio</a>.</li>
+    <li>Choose <em>Open dashboard</em>.</li>
+  </ol>
+</main>
+<footer>NSE Analyzer · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a> · <a href="support.html">Support</a></footer>
+</body>
+</html>
